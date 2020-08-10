@@ -20,4 +20,9 @@ public class CardsController {
     public void updateCard(){
         System.out.println("Updating card");
     }
+
+    @DeleteMapping
+    public void deleteCard(){
+        System.out.println("Deleting card");
+    }
 }
