@@ -1,9 +1,6 @@
 package no.data.cards;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/card")
@@ -17,5 +14,10 @@ public class CardsController {
     @GetMapping
     public void readCards(){
         System.out.println("Getting cards");
+    }
+
+    @PutMapping
+    public void updateCard(){
+        System.out.println("Updating card");
     }
 }
