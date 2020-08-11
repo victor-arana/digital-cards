@@ -30,8 +30,8 @@ public class CardsController {
     }
 
     @GetMapping
-    public void readCards(){
-        System.out.println("Getting cards");
+    public List<Card> readCards(){
+        return cards;
     }
 
     @PutMapping
