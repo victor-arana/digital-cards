@@ -25,8 +25,9 @@ public class CardsController {
     }
 
     @PostMapping
-    public void createCard(){
-        System.out.println("Creating card");
+    public Card createCard(@RequestBody Card card){
+        cards.add(card);
+        return card;
     }
 
     @GetMapping
