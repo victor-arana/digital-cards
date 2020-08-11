@@ -1,4 +1,4 @@
-package no.data.cards;
+package no.data.cards.controller;
 
 import org.springframework.web.bind.annotation.*;
 
